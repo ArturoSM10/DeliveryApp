@@ -1,0 +1,11 @@
+#Node Modules
+node_modules/
+
+#Archivos de sistema
+.DS_Store
+
+#IDE
+.vscode/
+
+#Logs NPM
+.npm-debug.log*
