@@ -358,47 +358,40 @@ h3 {
   font-size: 3.2rem;
 }
 
+.header {
+  padding: 5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
 @media (min-width: 1024px) {
   .header {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 .header__logo {
-  padding: 5rem 0;
   width: 30rem;
-  margin: 0 auto;
-}
-@media (min-width: 1024px) {
-  .header__logo {
-    margin: 0;
-  }
 }
 .header .navegacion {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .header .navegacion {
     flex-direction: row;
-    gap: 2rem;
+    width: auto;
   }
 }
 .header .navegacion__element {
-  padding-bottom: 2rem;
   color: #000;
   font-weight: 700;
   font-size: 2rem;
   text-transform: capitalize;
-}
-@media (min-width: 1024px) {
-  .header .navegacion__element {
-    padding-bottom: 0;
-  }
-}
-.header .navegacion__element:last-of-type {
-  margin-bottom: 0;
 }
 .header .navegacion__element--red {
   background-color: #e22331;
