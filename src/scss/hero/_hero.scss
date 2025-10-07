@@ -23,7 +23,7 @@
         img {
             width: 30rem;
 
-            @include m.tablet {
+            @include m.desktop {
                 width: 100%;
             }
         };

@@ -440,7 +440,7 @@ h3 {
 .hero__imagen img {
   width: 30rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .hero__imagen img {
     width: 100%;
   }
