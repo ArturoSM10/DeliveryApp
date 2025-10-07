@@ -15,9 +15,7 @@
 <body>
     <header class="header contenedor">
         <div class="header__logo">
-            <h1>
                 <img loading="lazy" decoding="async" src="./build/img/logo.svg" alt="AppComida - Envio de comida a domicilio">
-            </h1>
         </div>
         <nav class="navegacion">
             <a class="navegacion__element" href="#">Iniciar sesión</a>
@@ -26,6 +24,33 @@
         </nav>
     </header>
 
+    <main>
+        <section class="hero contenedor">
+
+            <div class="hero__formulario">
+                <h1 class="hero__title text-center">Encuentra y Pide comida de tu restaurante favorito</h1>
+
+                <form class="formulario">
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="restaurant">Restaurant</label>
+                        <input class="formulario__input" id="restaurant" type="text" placeholder="Tacos México">
+                    </div>
+
+                    <div class="formulario__campo">
+                        <label class="formulario__label" for="platillo">Platillo</label>
+                        <input class="formulario__input" id="platillo" type="text" placeholder="Pizza, Ensalada, Hamburguesa">
+                    </div>
+    
+                    <input class="formulario__btn" type="submit" value="Buscar">
+                </form>
+            </div>
+
+            <div class="hero__imagen">
+                <img loading="lazy" decoding="async" src="./build/img/dibujo_repartidor.svg" alt="Dibujo repartidor de comida">
+            </div>
+            
+        </section>
+    </main>
     
 </body>
 </html>
