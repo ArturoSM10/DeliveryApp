@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     gap: v.$separacion;
+    margin-bottom: v.$separacion;
     @include m.desktop { 
         flex-direction: row;
         justify-content: space-between;
