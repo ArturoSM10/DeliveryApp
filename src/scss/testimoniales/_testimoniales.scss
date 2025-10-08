@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 
 .testimoniales {
-    
+    margin-bottom: v.$separacion;
     &__title {
         text-align: center;
         margin: v.$separacion 0;
