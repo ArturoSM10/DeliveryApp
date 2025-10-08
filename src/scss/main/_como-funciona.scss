@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.pasos__img {
+    margin: v.$separacion 0 -1px;
+}
+
+.como-funciona {
+    background-color: v.$primario;
+    
+    &__title,
+    &__p {
+        margin: 0;
+        color: v.$blanco;
+        text-align: center;
+        
+    }
+    
+    &__p {
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+}
+
+.card-container {
+    margin-top: v.$separacion;
+    
+    @include m.tablet { 
+        @include m.grid(3, v.$separacion);
+    }
+
+    .card {
+        transition: transform 300ms;
+
+        &:hover {
+            transform: rotate(-4deg) scale(1.2);
+        }
+    }
+}

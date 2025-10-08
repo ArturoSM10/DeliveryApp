@@ -484,6 +484,40 @@ h3 {
   margin-top: 2rem;
 }
 
+.pasos__img {
+  margin: 5rem 0 -1px;
+}
+
+.como-funciona {
+  background-color: #E8505B;
+}
+.como-funciona__title, .como-funciona__p {
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+}
+.como-funciona__p {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.card-container {
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}
+.card-container .card {
+  transition: transform 300ms;
+}
+.card-container .card:hover {
+  transform: rotate(-4deg) scale(1.2);
+}
+
 .text-center {
   text-align: center;
 }
