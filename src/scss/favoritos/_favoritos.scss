@@ -1,0 +1,84 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.favoritos {
+    background-color: v.$grisClaro;
+    padding: v.$separacion 0;
+
+    &__title {
+        margin: 0 0 v.$separacion;
+        text-transform: capitalize;
+        color: v.$secundario;
+    }
+
+    .ensaladas-contenedor {
+
+        @include m.tablet { 
+            @include m.grid(2, 4rem);
+        }
+    }
+}
+
+.ensaladas__card {
+    padding: 4rem;
+    background-color: v.$blanco;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2.6rem -0.8rem #99a4a9;
+
+    @include m.tablet { 
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        // display: grid;
+        // grid-template-columns: 1fr 3fr;
+        // gap: 4rem;
+        // align-items: center;
+        margin-bottom: 0;
+    }
+
+    .ensaladas__img {
+        max-width: 20rem;
+        margin: 0 auto 2rem;
+
+        @include m.tablet { 
+            flex: 1;
+        }
+    }
+    
+    .ensaladas__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @include m.tablet { 
+            align-items: flex-start;
+            flex: 3;
+        }
+        
+        .ensaladas__title {
+            color: v.$primario;
+            font-size: 2.4rem;
+            margin: 1rem 0;
+            text-transform: capitalize;
+        }
+
+        img {
+
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 1.7;
+            color: v.$secundario;
+            text-align: center;
+            margin: 0.5rem 0;
+
+            @include m.tablet { 
+                text-align: left;
+            }
+        }
+
+    }
+}
