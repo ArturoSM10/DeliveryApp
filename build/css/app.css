@@ -518,6 +518,83 @@ h3 {
   transform: rotate(-4deg) scale(1.2);
 }
 
+.testimoniales__title {
+  text-align: center;
+  margin: 5rem 0;
+}
+@media (min-width: 768px) {
+  .testimoniales__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+}
+.testimoniales blockquote {
+  margin: 2rem 0 0;
+  font-size: 2rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 3rem;
+}
+.testimoniales blockquote:before {
+  content: '"';
+  font-size: 10rem;
+  display: inline;
+  position: absolute;
+  top: -4rem;
+  left: 0rem;
+  padding: 0 0 1rem;
+  opacity: 0.2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.testimoniales__card {
+  background-color: #455A64;
+  color: #FFF;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+.testimoniales__card:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .testimoniales__card {
+    margin-bottom: 0;
+  }
+  .testimoniales__card:nth-of-type(1) {
+    grid-column: 1/4;
+  }
+  .testimoniales__card:nth-of-type(3) {
+    grid-column: 5/6;
+    grid-row: 1/3;
+  }
+  .testimoniales__card:nth-of-type(4) {
+    grid-column: 1/3;
+  }
+  .testimoniales__card:nth-of-type(5) {
+    grid-column: 3/5;
+  }
+}
+.testimoniales__card .usuario {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.testimoniales__card .usuario .usuario__foto {
+  flex-basis: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimoniales__card .usuario .usuario__foto img {
+  height: 100%;
+}
+.testimoniales__card .usuario__name {
+  margin: 0.5rem 0;
+  color: #FFF;
+  font-weight: 700;
+}
+
 .text-center {
   text-align: center;
 }
