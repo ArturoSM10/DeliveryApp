@@ -670,6 +670,73 @@ h3 {
   }
 }
 
+.empleo {
+  padding: 0 0 5rem;
+}
+@media (min-width: 768px) {
+  .empleo__contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .empleo__contenedor {
+    align-items: stretch;
+  }
+}
+.empleo .empleo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.empleo__title, .empleo__p {
+  color: #455A64;
+}
+.empleo__title {
+  margin: 5rem 0;
+}
+.empleo__p {
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+  .empleo__p {
+    margin: 2rem 0;
+  }
+}
+.empleo__p:last-of-type {
+  margin-bottom: 2rem;
+}
+.empleo__btn {
+  background-color: #E8505B;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+  transition: background-color 300ms ease;
+  border: none;
+}
+.empleo__btn:hover {
+  cursor: pointer;
+  background-color: rgb(226.0757575758, 34.9242424242, 48.7575757576);
+}
+.empleo__btn {
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .empleo__btn {
+    width: auto;
+  }
+}
+
 .text-center {
   text-align: center;
 }
