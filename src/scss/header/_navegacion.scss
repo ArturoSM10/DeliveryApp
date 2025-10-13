@@ -36,7 +36,7 @@
         }
 
         &__element--red {
-            @include m.boton(v.$primarioFuerte, v.$blanco);
+            @include m.boton(v.$primario, v.$blanco);
 
             @include m.tablet { 
                 width: auto;
