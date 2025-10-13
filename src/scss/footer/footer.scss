@@ -1,0 +1,56 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer {
+    background-color: v.$secundario;
+    padding: v.$separacion 0 0;
+    
+    &__nosotros,
+    &__navegacion {
+        margin-bottom: v.$separacion;
+    }
+    
+    &__menu {
+        text-align: center;
+        @include m.tablet { 
+            @include m.grid(3, 1rem);
+            text-align: left;
+        }
+        h3,
+        p,
+        a {
+            color: v.$blanco;
+        }
+
+        p {
+            line-height: 1.8;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+
+            a {
+                font-size: 2rem;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    &__derechos-reservados {
+        background-color: v.$primario;
+        padding: 2rem 0;
+
+        p {
+            color: v.$blanco;
+            margin: 0;
+            text-transform: capitalize;
+        }
+    }
+
+}

@@ -789,6 +789,54 @@ h3 {
   }
 }
 
+.footer {
+  background-color: #455A64;
+  padding: 5rem 0 0;
+}
+.footer__nosotros, .footer__navegacion {
+  margin-bottom: 5rem;
+}
+.footer__menu {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: left;
+  }
+}
+.footer__menu h3,
+.footer__menu p,
+.footer__menu a {
+  color: #FFF;
+}
+.footer__menu p {
+  line-height: 1.8;
+}
+.footer__menu h3 {
+  margin: 0;
+}
+.footer__menu nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.footer__menu nav a {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+.footer__derechos-reservados {
+  background-color: #E8505B;
+  padding: 2rem 0;
+}
+.footer__derechos-reservados p {
+  color: #FFF;
+  margin: 0;
+  text-transform: capitalize;
+}
+
 .text-center {
   text-align: center;
 }
